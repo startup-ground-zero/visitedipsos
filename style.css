@@ -165,6 +165,12 @@ p { margin: 0 0 1.1em; }
 .hotel-modal-panel .btn { margin-top: .6rem; }
 .hotel-modal-close { position: absolute; top: 10px; right: 10px; padding: 8px; border: 0; background: none; color: var(--ink); cursor: pointer; }
 .modal-open { overflow: hidden; }
+.to-top { position: fixed; right: 22px; bottom: 22px; z-index: 60; width: 52px; height: 52px; display: grid; place-items: center; border: 0; border-radius: 50%; background: linear-gradient(135deg, var(--sun-2), var(--sun)); color: #2a1500; box-shadow: 0 14px 30px -10px rgba(255, 138, 31, .9), 0 4px 10px rgba(11, 42, 68, .25); cursor: pointer; opacity: 0; visibility: hidden; transform: translateY(16px) scale(.9); transition: opacity .25s, transform .25s, visibility .25s; }
+.to-top svg { width: 24px; height: 24px; }
+.to-top.show { opacity: 1; visibility: visible; transform: none; animation: float 3.2s ease-in-out infinite; }
+.to-top:hover { transform: translateY(-3px) scale(1.06); animation: none; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@media (prefers-reduced-motion: reduce) { .to-top.show { animation: none; } }
 @media (hover: none) { .hotel-peek { display: none; } }
 .hotel-toolbar { position: sticky; top: 76px; z-index: 5; display: grid; gap: .7rem; margin-bottom: 1.2rem; padding: 1rem 0 .5rem; background: var(--white); border-bottom: 1px solid rgba(11, 42, 68, .1); }
 .hotel-search input { width: 100%; font: inherit; padding: .85rem 1rem; border-radius: 4px; border: 1px solid rgba(11, 42, 68, .25); background: var(--white); color: var(--ink); }

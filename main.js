@@ -413,6 +413,20 @@
     }
   });
 
+  // Floating back-to-top button
+  var topBtn = el('button', 'to-top');
+  topBtn.type = 'button';
+  topBtn.setAttribute('aria-label', 'Επιστροφή στην κορυφή');
+  topBtn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  document.body.appendChild(topBtn);
+  function toggleTopBtn() { topBtn.classList.toggle('show', window.scrollY > 500); }
+  toggleTopBtn();
+  window.addEventListener('scroll', toggleTopBtn, { passive: true });
+  topBtn.addEventListener('click', function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  });
+
   // Scroll reveal
   var items = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
