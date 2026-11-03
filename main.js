@@ -24,7 +24,8 @@
     'Hotel Όμηρος': 3,
     'Hotel Ήλια Mare': 3,
     'Hotel Αρέθουσα': 3,
-    'Hotel Αρτεμίσιον': 3
+    'Hotel Αρτεμίσιον': 3,
+    'Θέρμαι Σύλλα SPA Wellness Hotel': 5
   };
 
   // Official websites. Hotels not listed here have no website.
@@ -431,8 +432,6 @@
   // Hotels directory
   var grid = document.getElementById('hotelGrid');
   var SVG_NS = 'http://www.w3.org/2000/svg';
-  var ASSOC_PHONE_TEXT = '(+30) 22260 22666';
-  var ASSOC_PHONE_HREF = 'tel:+302226022666';
 
   var GREEK_TO_LATIN = {
     'α': 'a', 'β': 'v', 'γ': 'g', 'δ': 'd', 'ε': 'e', 'ζ': 'z', 'η': 'i', 'θ': 'th', 'ι': 'i', 'κ': 'k',
@@ -570,11 +569,6 @@
       a.target = '_blank';
       a.rel = 'noopener';
       foot.appendChild(a);
-    } else {
-      foot.appendChild(el('span', 'no-site', 'Επικοινωνήστε με τον Σύλλογο'));
-      var t = el('a', 'phone-link', ASSOC_PHONE_TEXT);
-      t.href = ASSOC_PHONE_HREF;
-      foot.appendChild(t);
     }
     body.appendChild(foot);
     card.appendChild(body);
