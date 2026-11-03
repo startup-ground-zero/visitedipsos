@@ -64,22 +64,21 @@
       <p class="section-sub">Ξενοδοχεία της περιοχής. Ο κατάλογος εμπλουτίζεται συνεχώς.</p>
     </header>
     <div class="hotel-toolbar">
-      <label class="hotel-search">
-        <span class="sr-only">Αναζήτηση ξενοδοχείου</span>
-        <input type="search" id="hotelSearch" placeholder="Αναζήτηση ξενοδοχείου..." autocomplete="off">
-      </label>
       <div class="filters" role="group" aria-label="Κατηγορία ξενοδοχείου">
         <button type="button" class="filter-btn active" data-stars="all" aria-pressed="true">Όλα</button>
         <button type="button" class="filter-btn" data-stars="5" aria-pressed="false" aria-label="5 αστέρια"><span class="star-row"><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg></span></button>
         <button type="button" class="filter-btn" data-stars="4" aria-pressed="false" aria-label="4 αστέρια"><span class="star-row"><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg></span></button>
         <button type="button" class="filter-btn" data-stars="3" aria-pressed="false" aria-label="3 αστέρια"><span class="star-row"><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg></span></button>
         <button type="button" class="filter-btn" data-stars="2" aria-pressed="false" aria-label="2 αστέρια"><span class="star-row"><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg></span></button>
-        <button type="button" class="filter-btn" data-stars="none" aria-pressed="false">Χωρίς κατηγορία</button>
+        <button type="button" class="filter-btn" data-stars="1" aria-pressed="false" aria-label="1 αστέρι"><span class="star-row"><svg class="star"><use href="#i-star"/></svg></span></button>
       </div>
       <div class="filters" role="group" aria-label="Επιπλέον φίλτρα">
         <button type="button" class="filter-btn" id="fSpa" aria-pressed="false">SPA</button>
-        <button type="button" class="filter-btn" id="fSite" aria-pressed="false">Με ιστοσελίδα</button>
       </div>
+      <label class="hotel-search">
+        <span class="sr-only">Αναζήτηση ξενοδοχείου</span>
+        <input type="search" id="hotelSearch" placeholder="Αναζήτηση ξενοδοχείου..." autocomplete="off">
+      </label>
       <p class="hotel-count" id="hotelCount" aria-live="polite"></p>
     </div>
     <div class="hotel-grid" id="hotelGrid"></div>
