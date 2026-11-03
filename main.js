@@ -25,7 +25,10 @@
     'Hotel Ήλια Mare': 3,
     'Hotel Αρέθουσα': 3,
     'Hotel Αρτεμίσιον': 3,
-    'Θέρμαι Σύλλα SPA Wellness Hotel': 5
+    'Θέρμαι Σύλλα SPA Wellness Hotel': 5,
+    'Hotel Φάρος': 1,
+    'Hotel Ρομάντικα': 1,
+    'Hotel Παγώνα': 2
   };
 
   // Official websites. Hotels not listed here have no website.
@@ -41,12 +44,10 @@
     'Hotel Φάρος': 'https://www.edipsosfaros.gr',
     'Hotel Φανή': 'https://www.hotelfani.gr',
     'Hotel Ρομάντικα': 'https://www.romantica-edipsos.gr/',
-    'Hotel Ράνια': 'https://www.rania-hotel.gr/',
     'Hotel Παλλάδιον': 'https://www.pallad.gr',
     'Hotel Παγώνα': 'https://www.pagonahotel.gr',
     'Hotel Όμηρος': 'https://www.omirosluxuryhotel.gr',
     'Hotel Μπαλάσκα': 'https://www.balaska.gr',
-    'Hotel Μηθώ': 'https://www.mitho-hotel-aidipsos.com',
     'Hotel Λητώ': 'https://www.litohotel.gr',
     'Hotel Καστρί': 'https://www.hotelkastri.gr',
     'Hotel Καλλιθέα': 'https://www.hotelkallithea.gr',
