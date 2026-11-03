@@ -23,6 +23,7 @@
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
     <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3 6.1 20.6l1.3-6.6L2.5 9.4l6.6-.8z"/></symbol>
   </defs>
 </svg>
 
@@ -69,10 +70,10 @@
       </label>
       <div class="filters" role="group" aria-label="Κατηγορία ξενοδοχείου">
         <button type="button" class="filter-btn active" data-stars="all" aria-pressed="true">Όλα</button>
-        <button type="button" class="filter-btn" data-stars="5" aria-pressed="false">5 αστέρια</button>
-        <button type="button" class="filter-btn" data-stars="4" aria-pressed="false">4 αστέρια</button>
-        <button type="button" class="filter-btn" data-stars="3" aria-pressed="false">3 αστέρια</button>
-        <button type="button" class="filter-btn" data-stars="2" aria-pressed="false">2 αστέρια</button>
+        <button type="button" class="filter-btn" data-stars="5" aria-pressed="false" aria-label="5 αστέρια"><span class="star-row"><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg></span></button>
+        <button type="button" class="filter-btn" data-stars="4" aria-pressed="false" aria-label="4 αστέρια"><span class="star-row"><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg></span></button>
+        <button type="button" class="filter-btn" data-stars="3" aria-pressed="false" aria-label="3 αστέρια"><span class="star-row"><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg></span></button>
+        <button type="button" class="filter-btn" data-stars="2" aria-pressed="false" aria-label="2 αστέρια"><span class="star-row"><svg class="star"><use href="#i-star"/></svg><svg class="star"><use href="#i-star"/></svg></span></button>
         <button type="button" class="filter-btn" data-stars="none" aria-pressed="false">Χωρίς κατηγορία</button>
       </div>
       <div class="filters" role="group" aria-label="Επιπλέον φίλτρα">

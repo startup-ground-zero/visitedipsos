@@ -346,6 +346,9 @@ details > div p:last-child { margin-bottom: 0; }
 .hotel-count { color: var(--muted); font-size: .92rem; margin: 0; }
 .stars { display: inline-flex; gap: 2px; color: var(--sun-2); }
 .stars svg { width: 18px; height: 18px; fill: currentColor; }
+.star-row { display: inline-flex; align-items: center; gap: 2px; }
+.star-row .star { width: 16px; height: 16px; fill: var(--sun-2); }
+.filter-btn { display: inline-flex; align-items: center; min-height: 44px; }
 .tag { display: inline-block; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--sea); }
 
 .board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 1.5rem 0 2rem; }
