@@ -207,7 +207,7 @@ p { margin: 0 0 1.1em; }
 
 /* Footer */
 .site-footer { background: #071a2b; color: rgba(255, 255, 255, .7); padding: 56px 0 28px; font-size: .92rem; }
-.foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+.foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 40px; }
 .foot-grid img { height: 54px; width: auto; background: var(--white); border-radius: 4px; padding: 4px 8px; margin-bottom: 1rem; }
 .foot-grid h4 { color: var(--white); font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 1rem; }
 .foot-grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
