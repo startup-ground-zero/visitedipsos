@@ -52,35 +52,37 @@
 <section class="page-hero" style="background-image:url('town-night.jpg')">
   <div class="container">
     <p class="crumbs"><a href="index.html">Αρχική</a><span>/</span>Ξενοδοχεία</p>
-    <h1>Εδώ θα βρεις ό,τι χρειαστείς για την περιοχή</h1>
+    <h1>Βρες το ξενοδοχείο της προτίμησής σου</h1>
     <p class="lead">Ξενοδοχεία, ενοικιαζόμενα δωμάτια, SPA, καφέ, εστιατόρια και χρήσιμες υπηρεσίες.</p>
   </div>
 </section>
 
-<section class="section hotels" id="categories">
+<section class="section hotels" id="hotels-list">
   <div class="container">
-    <header class="section-head reveal">
-      <p class="eyebrow dark">Κατηγορίες</p>
-      <h2>Τι ψάχνεις;</h2>
-      <p class="section-sub">Ο κατάλογος της περιοχής σε εννέα κατηγορίες.</p>
-    </header>
-    <div class="cat-grid">
-      <div class="cat reveal"><span>Ξενοδοχεία</span><b>52</b></div>
-      <div class="cat reveal"><span>Ενοικιαζόμενα δωμάτια, Studios</span><b>18</b></div>
-      <div class="cat reveal"><span>Υδροθεραπευτήρια, SPA</span><b>12</b></div>
-      <div class="cat reveal"><span>Καφέ, Bar, Beach Bar</span><b>6</b></div>
-      <div class="cat reveal"><span>Εστιατόρια, Ταβέρνες, Ουζερί</span><b>5</b></div>
-      <div class="cat reveal"><span>Μέσα μαζικής μεταφοράς, Ενοικιάσεις, Συνεργεία</span><b>6</b></div>
-      <div class="cat reveal"><span>Φαρμακεία, Κέντρα υγείας, Ιατροί</span><b>13</b></div>
-      <div class="cat reveal"><span>Δημοτικές και Δημόσιες Υπηρεσίες, Σώματα Ασφαλείας</span><b>8</b></div>
-      <div class="cat reveal"><span>Τοπικά προϊόντα</span><b>3</b></div>
-    </div>
-
     <header class="section-head reveal" id="hotels">
       <p class="eyebrow">Ξενοδοχεία</p>
       <h2>Βρες το ξενοδοχείο σου</h2>
       <p class="section-sub">Ξενοδοχεία της περιοχής. Ο κατάλογος εμπλουτίζεται συνεχώς.</p>
     </header>
+    <div class="hotel-toolbar">
+      <label class="hotel-search">
+        <span class="sr-only">Αναζήτηση ξενοδοχείου</span>
+        <input type="search" id="hotelSearch" placeholder="Αναζήτηση ξενοδοχείου..." autocomplete="off">
+      </label>
+      <div class="filters" role="group" aria-label="Κατηγορία ξενοδοχείου">
+        <button type="button" class="filter-btn active" data-stars="all" aria-pressed="true">Όλα</button>
+        <button type="button" class="filter-btn" data-stars="5" aria-pressed="false">5 αστέρια</button>
+        <button type="button" class="filter-btn" data-stars="4" aria-pressed="false">4 αστέρια</button>
+        <button type="button" class="filter-btn" data-stars="3" aria-pressed="false">3 αστέρια</button>
+        <button type="button" class="filter-btn" data-stars="2" aria-pressed="false">2 αστέρια</button>
+        <button type="button" class="filter-btn" data-stars="none" aria-pressed="false">Χωρίς κατηγορία</button>
+      </div>
+      <div class="filters" role="group" aria-label="Επιπλέον φίλτρα">
+        <button type="button" class="filter-btn" id="fSpa" aria-pressed="false">SPA</button>
+        <button type="button" class="filter-btn" id="fSite" aria-pressed="false">Με ιστοσελίδα</button>
+      </div>
+      <p class="hotel-count" id="hotelCount" aria-live="polite"></p>
+    </div>
     <div class="hotel-grid" id="hotelGrid"></div>
 
     <div class="hotel-empty" style="margin-top:2rem">
@@ -127,13 +129,20 @@
           <li><a href="tel:+302226022666">(+30) 22260 22666</a></li>
           <li><a href="mailto:VisitEdipsos@Gmail.com">VisitEdipsos@Gmail.com</a></li>
           <li>25ης Μαρτίου 39</li>
-          <li><a href="https://www.facebook.com/visitedipsos.gr/" target="_blank" rel="noopener">Facebook</a> &middot; <a href="https://www.instagram.com/explore/tags/edipsos/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.youtube.com/channel/UCyaTz2kGDLdaa71J5itsKyw" target="_blank" rel="noopener">YouTube</a></li>
+          <li class="foot-social"><a href="https://www.facebook.com/visitedipsos.gr/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a><a href="https://twitter.com/VisitEdipsos" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li>
         </ul>
       </div>
     </div>
     <p class="foot-bottom">2017 - <span id="year"></span> &copy; Σύλλογος Ξενοδόχων Λουτρών Αιδηψού. Με επιφύλαξη παντός δικαιώματος.</p>
   </div>
 </footer>
+
+<div class="hotel-modal" id="hotelModal" role="dialog" aria-modal="true" aria-label="Στοιχεία ξενοδοχείου" hidden>
+  <div class="hotel-modal-panel">
+    <button type="button" class="hotel-modal-close" id="hotelModalClose" aria-label="Κλείσιμο"><svg class="ico"><use href="#i-close"/></svg></button>
+    <div id="hotelModalBody"></div>
+  </div>
+</div>
 
 <script src="main.js"></script>
 </body>
