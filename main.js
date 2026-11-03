@@ -23,7 +23,8 @@
     'Αύρα Spa Hotel': 4,
     'Hotel Όμηρος': 3,
     'Hotel Ήλια Mare': 3,
-    'Hotel Αρέθουσα': 3
+    'Hotel Αρέθουσα': 3,
+    'Hotel Αρτεμίσιον': 3
   };
 
   // Official websites. Hotels not listed here have no website.
