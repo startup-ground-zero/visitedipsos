@@ -351,6 +351,21 @@ details > div p:last-child { margin-bottom: 0; }
 .member strong { display: block; margin-top: .2rem; font-size: 1.05rem; }
 .member strong, .feature strong, .notice strong { color: var(--white); }
 
+.guide-split { align-items: start; }
+.band-dark { background: var(--ink); color: var(--white); }
+.band-dark h2, .band-dark h3 { color: var(--white); }
+.band-dark p { color: rgba(255, 255, 255, .82); }
+.band-dark .band-inner { max-width: 900px; margin-left: max(20px, calc((100% - 1180px) / 2)); }
+.band-dark details { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .16); color: var(--white); }
+.band-dark details > div { color: rgba(255, 255, 255, .85); }
+.band-dark details strong { color: var(--white); }
+.band-dark .figure figcaption { color: rgba(255, 255, 255, .7); }
+.band-dark .feature { background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .14); }
+.contra { padding: clamp(24px, 3vw, 36px); border-radius: var(--radius); background: var(--ink); color: var(--white); }
+.contra h3 { margin-top: 0; color: var(--white); }
+.contra ul { margin: 0; padding-left: 1.2rem; color: rgba(255, 255, 255, .85); }
+.contra li { margin-bottom: .5rem; }
+
 .cta-band { background: linear-gradient(135deg, var(--ink), #0f5b7a); color: var(--white); padding: clamp(48px, 7vw, 80px) 0; }
 .cta-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
 .cta-inner h2 { margin: 0; max-width: 22ch; }
